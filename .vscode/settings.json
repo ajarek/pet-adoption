@@ -9,5 +9,6 @@
     "workbench.colorTheme": "Default High Contrast",
     "editor.wordWrap": "on",
     "prettier.semi": false,
+    "prettier.singleAttributePerLine": true,
     "prettier.singleQuote": true
 }
