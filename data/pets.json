@@ -1,0 +1,218 @@
+[
+    {
+        "id":1,
+        "name":"Romek",
+        "image":"/images/cats/kot1.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":2,
+        "name":"Romek",
+        "image":"/images/cats/kot2.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":3,
+        "name":"Romek",
+        "image":"/images/cats/kot3.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":4,
+        "name":"Romek",
+        "image":"/images/cats/kot4.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":5,
+        "name":"Romek",
+        "image":"/images/cats/kot5.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":6,
+        "name":"Romek",
+        "image":"/images/cats/kot6.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":7,
+        "name":"Romek",
+        "image":"/images/cats/kot7.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":8,
+        "name":"Romek",
+        "image":"/images/dogs/piesek1.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":9,
+        "name":"Romek",
+        "image":"/images/dogs/piesek2.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":10,
+        "name":"Romek",
+        "image":"/images/dogs/piesek3.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":11,
+        "name":"Romek",
+        "image":"/images/dogs/piesek4.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":12,
+        "name":"Romek",
+        "image":"/images/dogs/piesek5.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":13,
+        "name":"Romek",
+        "image":"/images/dogs/piesek6.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":14,
+        "name":"Romek",
+        "image":"/images/dogs/piesek7.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":15,
+        "name":"Romek",
+        "image":"/images/dogs/piesek8.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":16,
+        "name":"Romek",
+        "image":"/images/dogs/piesek9.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":17,
+        "name":"Romek",
+        "image":"/images/dogs/piesek10.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    },
+    {
+        "id":18,
+        "name":"Romek",
+        "image":"/images/dogs/piesek11.jpg",
+        "group":"koty",
+        "age"  :3,
+        "vaccinated":true,
+        "breed":"mieszniec",
+        "gender":"samiec",
+        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+
+    }
+]
