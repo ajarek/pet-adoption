@@ -36,7 +36,7 @@ const CardPet = ({ image, name, group, age, vaccinated, breed, gender, descripti
         className=' w-full  h-full  object-cover  '
       />
     </CardTitle>
-   <h1>{name}</h1>
+   <h1 className="text-2xl font-bold">{name}</h1>
   </CardHeader>
   <CardContent>
     <p>{group}</p>
