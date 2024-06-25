@@ -58,7 +58,7 @@ const MobileNav = () => {
           Blog
         </Link>
         <Link
-          href="/"
+          href="/pets"
           className="flex items-center  text-xl"
         >
           Zwierzęta

@@ -37,7 +37,7 @@ const Links = () => {
           Blog
         </Link>
         <Link
-          href="/"
+          href="/pets"
           className="flex items-center  text-xl hover:text-primary"
         >
           Zwierzęta

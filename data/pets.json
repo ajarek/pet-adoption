@@ -13,14 +13,14 @@
     },
     {
         "id":2,
-        "name":"Romek",
+        "name":"Ania",
         "image":"/images/cats/kot2.jpg",
         "group":"koty",
-        "age"  :3,
+        "age"  :5,
         "vaccinated":true,
         "breed":"mieszniec",
-        "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "gender":"samica",
+        "description":"Ania szuka spokojnego domu, w którym będzie mógła czuć się bezpiecznie i kochana."
 
     },
     {
@@ -32,19 +32,19 @@
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samica",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Gosia szuka spokojnego domu, w którym będzie mógła czuć się bezpiecznie i kochana."
 
     },
     {
         "id":4,
-        "name":"Romek",
+        "name":"Mruczek",
         "image":"/images/cats/kot4.jpg",
         "group":"koty",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Mruczek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
