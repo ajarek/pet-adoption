@@ -2,7 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 import pets from '@/data/pets.json'
 import Link from 'next/link'
-const Pet = ({ params }: { params: { id: string } }) => {
+import { auth } from '@/app/api/auth/auth'
+
+const Pet = async({ params }: { params: { id: string } }) => {
+  const session = await auth()
   const { id } = params
   const pet = pets.find((pet) => pet.id === parseInt(id))
   if (!pet) return null
@@ -42,12 +45,17 @@ const Pet = ({ params }: { params: { id: string } }) => {
         <p>
           <span className="text-gray-500">opis:</span> {pet.description}
         </p>
+        {session?(
         <Link
           href={`/adoption?id=${pet.id}&name=${pet.name}&image=${pet.image}&gender=${pet.gender}&age=${pet.age}&breed=${pet.breed}&group=${pet.group}&vaccinated=${pet.vaccinated}&description=${pet.description}`}
           className="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded"
         >
           Akceptuję regulamin i adoptuje
         </Link>
+        ):(
+          <Link href="/register" className="bg-red-500 hover:bg-red-700 text-white text-center font-bold py-2 px-4 rounded">Musisz się zalogować</Link>
+        )}
+          
       </div>
     </div>
   )
