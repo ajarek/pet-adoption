@@ -31,10 +31,10 @@ const Links = () => {
           Pytania
         </Link>
         <Link
-          href="/"
+          href="/blogs"
           className="flex items-center  text-xl hover:text-primary"
         >
-          Blog
+          Blogi
         </Link>
         <Link
           href="/pets"

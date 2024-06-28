@@ -52,10 +52,10 @@ const MobileNav = () => {
           Pytania
         </Link>
         <Link
-          href="/"
+          href="/blogs"
           className="flex items-center  text-xl"
         >
-          Blog
+          Blogi
         </Link>
         <Link
           href="/pets"

@@ -73,7 +73,7 @@ export const {
     },
 
     async redirect({ url, baseUrl }) {
-      return `${baseUrl}/dashboard`
+      return `${baseUrl}/pets`
     },
   },
   secret: process.env.AUTH_SECRET,
