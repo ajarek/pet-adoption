@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 export type PropsBlog = {
   image: string
-  id: number
+  id: number|string
   title: string
   description?: string
 }
@@ -27,7 +27,7 @@ const CardBlog = ({ image, title, description, id }: PropsBlog) => {
               width={300}
               height={200}
               alt="Profile"
-              className="w-full  h-full  object-cover"
+              className="h-[300px] w-full object-cover"
             />
           </CardTitle>
           <h1 className="text-2xl font-bold">{title}</h1>

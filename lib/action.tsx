@@ -1,10 +1,11 @@
 'use server'
 
 import connectToDb from './connectToDb'
-import { User, UserWithoutId } from './models'
+import { User, UserWithoutId, Blog } from './models'
 import { revalidatePath } from 'next/cache'
 import bcrypt from 'bcryptjs'
 import { redirect } from 'next/navigation'
+import { title } from 'process'
 
 export const addUser = async (formData: UserWithoutId) => {
   const { username, email, password, img, isAdmin } = formData
@@ -65,5 +66,38 @@ export const updateUser = async (formData: FormData) => {
     return { message: 'Failed to update to db' }
   } finally {
     redirect('/dashboard/')
+  }
+}
+
+
+export const addBlog = async (formData: FormData) => {
+  console.log(formData)
+ const title = formData.get('title')
+ const description = formData.get('description')
+ const image = formData.get('image')
+  
+  try {
+    connectToDb()
+    const newBlog = new Blog({
+      title,
+      description,
+      image,
+    })
+    await newBlog.save()
+    console.log('saved' + newBlog)
+    revalidatePath('/blogs')
+  } catch (err) {
+    console.log(err)
+  }finally {
+    redirect('/blogs')
+  }
+}
+export const getBlogs = async()=>{
+  try{
+   await connectToDb()
+   const blogs=await Blog.find({})
+   return blogs
+  }catch(err){
+    console.log(err)
   }
 }

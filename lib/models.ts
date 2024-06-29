@@ -10,6 +10,12 @@ export type User = {
 }
 export type UserWithoutId = Omit<User, '_id'>
 
+export type Blog = {
+  title: string
+  description: string
+  image: string
+}
+
 const userSchema = new mongoose.Schema(
   {
     username: { type: String, required: true, unique: true, min: 3, max: 20 },
@@ -20,5 +26,14 @@ const userSchema = new mongoose.Schema(
   },
   { timestamps: true }
 )
+const blogSchema = new mongoose.Schema({
+
+  title: {type: String, required: true,},
+  description: {type: String, required: true},
+  image: {type: String},
+}, { timestamps: true }
+)
+
 
 export const User = mongoose.models?.User || mongoose.model('User', userSchema)
+export const Blog = mongoose.models?.Blog || mongoose.model('Blog', blogSchema)

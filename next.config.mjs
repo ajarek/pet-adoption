@@ -17,7 +17,31 @@ const nextConfig = {
 
           {
             protocol: 'https',
-            hostname:"img.myloview.com",
+            hostname:"www.mccanndogs.com",
+            port: '',
+           
+          },
+          {
+            protocol: 'https',
+            hostname:"encrypted-tbn0.gstatic.com",
+            port: '',
+           
+          },
+          {
+            protocol: 'https',
+            hostname:"media.istockphoto.com",
+            port: '',
+           
+          },
+          {
+            protocol: 'https',
+            hostname:"www.rover.com",
+            port: '',
+           
+          },
+          {
+            protocol: 'https',
+            hostname:"image.petmd.com",
             port: '',
            
           },
