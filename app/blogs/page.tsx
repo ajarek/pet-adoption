@@ -17,6 +17,12 @@ const Blog =async () => {
         >
           Dodaj Blog
         </Link>
+        <Link
+          href="/blogs-my"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Moje Blogi
+        </Link>
       </div>
       <div className="w-full grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
         {newBlogs && newBlogs.map((el:any)=>{
