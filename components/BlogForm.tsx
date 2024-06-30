@@ -4,8 +4,13 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { Textarea } from '@/components/ui/textarea'
-
-const BlogForm = () => {
+import { auth } from '@/app/api/auth/auth'
+import { redirect } from 'next/navigation'
+const BlogForm = async() => {
+  const session = await auth()
+  if (!session) {
+    redirect('/register')
+  }
   return (
     <div className="w-1/2 flex flex-col items-center justify-center p-4 border-2 rounded-sm">
       <div className="flex justify-center p-2">
@@ -22,7 +27,8 @@ const BlogForm = () => {
       <form
         className="w-full  flex flex-col gap-4 p-6   "
         action={addBlog}
-      >
+      > 
+      <input type="hidden" name="userId" value={session.user?.email||''} />
         <Input
           type="text"
           placeholder="tytuł"

@@ -18,7 +18,7 @@ export default function Home() {
           Zaopiekuj się mną
         </h1>
       </div>
-      <div className="flex flex-col items-center  w-full px-12 py-8">
+      <div className="flex flex-col items-center  w-full px-12 max-sm:px-4 py-8">
         <div className="flex flex-col items-center   w-full">
           <h2 className="text-3xl text-primary font-bold">
             Nowe zwierzczki do adopcji!

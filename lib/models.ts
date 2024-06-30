@@ -14,6 +14,7 @@ export type Blog = {
   title: string
   description: string
   image: string
+  userId: string
 }
 
 const userSchema = new mongoose.Schema(
@@ -31,6 +32,7 @@ const blogSchema = new mongoose.Schema({
   title: {type: String, required: true,},
   description: {type: String, required: true},
   image: {type: String},
+  userId: {type: String, required: true}
 }, { timestamps: true }
 )
 

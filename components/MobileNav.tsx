@@ -10,8 +10,10 @@ import {
   SheetHeader,
 } from '@/components/ui/sheet'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 const MobileNav = () => {
+  const pathname = usePathname()
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -40,32 +42,37 @@ const MobileNav = () => {
         </SheetHeader>
         <div className='flex flex-col gap-4 mt-4'>
         <Link
-          href="/"
-          className="flex items-center  text-xl"
+          href="/about"
+          className={`flex items-center  text-xl hover:text-primary ${
+            pathname === '/about' ? 'active ' : ''}`}
         >
           O nas
         </Link>
         <Link
-          href="/"
-          className="flex items-center  text-xl"
+          href="/questions"
+          className={`flex items-center  text-xl hover:text-primary ${
+            pathname === '/questions' ? 'active ' : ''}`}
         >
           Pytania
         </Link>
         <Link
           href="/blogs"
-          className="flex items-center  text-xl"
+          className={`flex items-center  text-xl hover:text-primary ${
+            pathname === '/blogs' ? 'active ' : ''}`}
         >
           Blogi
         </Link>
         <Link
           href="/pets"
-          className="flex items-center  text-xl"
+          className={`flex items-center  text-xl hover:text-primary ${
+            pathname === '/pets' ? 'active ' : ''}`}
         >
           Zwierzęta
         </Link>
         <Link
-          href="/"
-          className="flex items-center  text-xl"
+          href="/contact"
+          className={`flex items-center  text-xl hover:text-primary ${
+            pathname === '/contact' ? 'active ' : ''}`}
         >
           Kontakt
         </Link>

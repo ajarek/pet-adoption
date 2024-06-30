@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className="w-full pb-12 pt-4  flex flex-col justify-start items-center gap-8 border-t-2   ">
+    <footer className="w-full p-8   flex flex-col justify-start items-center gap-8 border-t-2   ">
       <nav className=" ">
         <Link href="/" className="flex items-center gap-2 max-sm-gap-1">
           <Image src="/images/my-logo.png" width={30} height={30} alt="logo"  className='rounded-sm'  />

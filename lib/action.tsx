@@ -75,13 +75,14 @@ export const addBlog = async (formData: FormData) => {
  const title = formData.get('title')
  const description = formData.get('description')
  const image = formData.get('image')
-  
+ const  userId =formData.get('userId:') 
   try {
     connectToDb()
     const newBlog = new Blog({
       title,
       description,
       image,
+      userId
     })
     await newBlog.save()
     console.log('saved' + newBlog)

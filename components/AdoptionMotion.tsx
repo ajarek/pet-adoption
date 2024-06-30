@@ -10,7 +10,7 @@ const ImageMotion = ({ image, userName, name, id, group }: { image: string, user
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
       >
-        <div className='w-1/4 bg-gradient-to-br from-amber-400 via-yellow-900 to-amber-500 p-4 rounded-lg text-white text-xl '>
+        <div className='w-1/4 max-lg:w-1/2 bg-gradient-to-br from-amber-400 via-yellow-900 to-amber-500 p-4 rounded-lg text-white text-xl '>
         
         <div className='w-full flex justify-center'>
          <Image src={image} alt='pet' width={60} height={60} className='rounded-lg'/>
