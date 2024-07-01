@@ -28,7 +28,7 @@ const MyBlogs = async () => {
               <p>{el.description.slice(0, 50)+'...'}</p>
             </Link>
             <Link href={`/editBlog?id=${(el._id).toString()}&title=${el.title}&description=${el.description}&image=${el.image}&userId=${el.userId}`} className='flex items-center justify-center px-4 bg-blue-500 h-8 rounded-sm hover:bg-blue-600'>Edytuj</Link>
-            <DeleteBlog idBlog={(el._id).toString()} />
+            <DeleteBlog  idBlog={(el._id).toString()} />
             </div>
           )
         })}

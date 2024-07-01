@@ -19,7 +19,7 @@ const DeleteBlog = ({ idBlog }: { idBlog: string }) => {
       <Button
         className='h-8 '
         type='submit'
-       
+        variant={'destructive'}
       >
         Usuń
       </Button>
