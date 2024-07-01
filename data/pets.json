@@ -49,158 +49,158 @@
     },
     {
         "id":5,
-        "name":"Romek",
+        "name":"Waldek",
         "image":"/images/cats/kot5.jpg",
         "group":"koty",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Waldek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
         "id":6,
-        "name":"Romek",
+        "name":"Jola",
         "image":"/images/cats/kot6.jpg",
         "group":"koty",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
-        "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "gender":"samica",
+        "description":"Jola szuka spokojnego domu, w którym będzie mógła czuć się bezpiecznie i kochana."
 
     },
     {
         "id":7,
-        "name":"Romek",
+        "name":"Zuzia",
         "image":"/images/cats/kot7.jpg",
         "group":"koty",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
-        "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "gender":"samica",
+        "description":"Zuzia szuka spokojnego domu, w którym będzie mógła czuć się bezpiecznie i kochany."
 
     },
     {
         "id":8,
-        "name":"Romek",
+        "name":"Rysio",
         "image":"/images/dogs/piesek1.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Rysio szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
         "id":9,
-        "name":"Romek",
+        "name":"Guliwer",
         "image":"/images/dogs/piesek2.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Guliwer szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
         "id":10,
-        "name":"Romek",
+        "name":"Piksel",
         "image":"/images/dogs/piesek3.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Piksel szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
         "id":11,
-        "name":"Romek",
+        "name":" Rubel",
         "image":"/images/dogs/piesek4.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":" Rubel szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
         "id":12,
-        "name":"Romek",
+        "name":"Mila",
         "image":"/images/dogs/piesek5.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
-        "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "gender":"samica",
+        "description":"Mila szuka spokojnego domu, w którym będzie mógła czuć się bezpiecznie i kochana."
 
     },
     {
         "id":13,
-        "name":"Romek",
+        "name":"Gwiazda",
         "image":"/images/dogs/piesek6.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
-        "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "gender":"samica",
+        "description":"Gwiazda szuka spokojnego domu, w którym będzie mógła czuć się bezpiecznie i kochana."
 
     },
     {
         "id":14,
-        "name":"Romek",
+        "name":"Minado",
         "image":"/images/dogs/piesek7.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Minado szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
         "id":15,
-        "name":"Romek",
+        "name":"Ares",
         "image":"/images/dogs/piesek8.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Ares szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
         "id":16,
-        "name":"Romek",
+        "name":"Juno",
         "image":"/images/dogs/piesek9.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
         "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "description":"Juno szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
 
     },
     {
         "id":17,
-        "name":"Romek",
+        "name":"Saba",
         "image":"/images/dogs/piesek10.jpg",
         "group":"psy",
         "age"  :3,
         "vaccinated":true,
         "breed":"mieszniec",
-        "gender":"samiec",
-        "description":"Romek szuka spokojnego domu, w którym będzie mógł czuć się bezpiecznie i kochany."
+        "gender":"samica",
+        "description":"Saba szuka spokojnego domu, w którym będzie mógła czuć się bezpiecznie i kochana."
 
     },
     {

@@ -75,7 +75,7 @@ export const addBlog = async (formData: FormData) => {
  const title = formData.get('title')
  const description = formData.get('description')
  const image = formData.get('image')
- const  userId =formData.get('userId:') 
+ const  userId =formData.get('userId') 
   try {
     connectToDb()
     const newBlog = new Blog({
@@ -94,11 +94,56 @@ export const addBlog = async (formData: FormData) => {
   }
 }
 export const getBlogs = async()=>{
+
   try{
    await connectToDb()
-   const blogs=await Blog.find({})
+   const blogs=await Blog.find({}) as Blog[]
    return blogs
   }catch(err){
     console.log(err)
+  }
+}
+
+
+export const deleteBlog= async(formData: FormData)=>{
+  const id = formData.get('idBlog')
+
+  try {
+    await connectToDb()
+    await Blog.findOneAndDelete({ _id: id })
+    revalidatePath('/blogs')
+    console.log({ message: `Deleted blog ${id}` })
+    return { message: `Deleted blog ${id}` }
+  } catch (err) {
+    return { message: 'Failed to delete blog' }
+  }
+}
+
+export const updateBlog=async(formData: FormData)=>{
+  const blogId = formData.get('blogId')
+  const title = formData.get('title')
+  const image = formData.get('image')
+  const description = formData.get('description')
+  const userId = formData.get('userId')
+  
+ 
+  try {
+    await connectToDb()
+    await Blog.findOneAndUpdate(
+      { _id: blogId },
+      {
+        title: title,
+        image: image,
+        description: description,
+       userId: userId
+      }
+    )
+    revalidatePath(`/blogs`)
+
+    return { message: `Updated blog ${blogId}` }
+  } catch (err) {
+    return { message: 'Failed to update to db' }
+  } finally {
+    redirect('/blogs')
   }
 }

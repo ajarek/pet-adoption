@@ -27,7 +27,7 @@ const Blog =async () => {
       <div className="w-full grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
         {newBlogs && newBlogs.map((el:any)=>{
           return(
-            <>
+            
             <CardBlog key={el._id}
             id={el._id}
             image={el.image}
@@ -36,7 +36,7 @@ const Blog =async () => {
             userId={el.userId}
             
           />
-          </>
+         
           )
         })}
        

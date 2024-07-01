@@ -45,6 +45,12 @@ const nextConfig = {
             port: '',
            
           },
+          {
+            protocol: 'https',
+            hostname:"goldenvet.pl",
+            port: '',
+           
+          },
         ],
       },
 };
