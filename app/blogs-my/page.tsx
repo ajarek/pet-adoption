@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation'
 import { getBlogs } from '@/lib/action'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { Pencil } from 'lucide-react'
 import DeleteBlog from '@/components/DeleteBlog'
 
 const MyBlogs = async () => {
@@ -27,7 +27,7 @@ const MyBlogs = async () => {
               <h2>{el.title}</h2>
               <p>{el.description.slice(0, 50)+'...'}</p>
             </Link>
-            <Link href={`/editBlog?id=${(el._id).toString()}&title=${el.title}&description=${el.description}&image=${el.image}&userId=${el.userId}`} className='flex items-center justify-center px-4 bg-blue-500 h-8 rounded-sm hover:bg-blue-600'>Edytuj</Link>
+            <Link href={`/editBlog?id=${(el._id).toString()}&title=${el.title}&description=${el.description}&image=${el.image}&userId=${el.userId}`} className='flex items-center justify-center  bg-blue-500 p-2 rounded-sm hover:bg-blue-600'><Pencil size={16} /></Link>
             <DeleteBlog  idBlog={(el._id).toString()} />
             </div>
           )

@@ -2,6 +2,7 @@
 
 import { deleteBlog } from '@/lib/action'
 import { Button } from './ui/button'
+import { Trash2 } from 'lucide-react'
 
 const DeleteBlog = ({ idBlog }: { idBlog: string }) => {
  
@@ -17,11 +18,11 @@ const DeleteBlog = ({ idBlog }: { idBlog: string }) => {
       />
 
       <Button
-        className='h-8 '
+        className='px-2 h-8 '
         type='submit'
         variant={'destructive'}
       >
-        Usuń
+       <Trash2 size={16} />
       </Button>
     </form>
   )

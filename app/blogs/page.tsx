@@ -9,7 +9,7 @@ const Blog =async () => {
  
   return (
     <div className="flex flex-col items-center justify-center px-24 py-4 gap-4 max-lg:px-4 ">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center justify-center flex-wrap gap-4">
         <h1 className="text-3xl font-bold">Lista Blogów</h1>
         <Link
           href="/blog-add"
