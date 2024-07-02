@@ -19,7 +19,6 @@ export const {
   },
 
   providers: [
-   
     CredentialsProvider({
       name: 'Credential',
       credentials: {

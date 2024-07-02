@@ -33,49 +33,54 @@ const MobileNav = () => {
               width={40}
               height={40}
               alt="logo"
-              className='rounded-sm' 
+              className="rounded-sm"
             />
             <h1 className="font-semibold text-xl text-primary capitalize ">
               Fajny Zwierzak
             </h1>
           </Link>
         </SheetHeader>
-        <div className='flex flex-col gap-4 mt-4'>
-        <Link
-          href="/about"
-          className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/about' ? 'active ' : ''}`}
-        >
-          O nas
-        </Link>
-        <Link
-          href="/questions"
-          className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/questions' ? 'active ' : ''}`}
-        >
-          Pytania
-        </Link>
-        <Link
-          href="/blogs"
-          className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/blogs' ? 'active ' : ''}`}
-        >
-          Blogi
-        </Link>
-        <Link
-          href="/pets"
-          className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/pets' ? 'active ' : ''}`}
-        >
-          Zwierzęta
-        </Link>
-        <Link
-          href="/contact"
-          className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/contact' ? 'active ' : ''}`}
-        >
-          Kontakt
-        </Link>
+        <div className="flex flex-col gap-4 mt-4">
+          <Link
+            href="/about"
+            className={`flex items-center  text-xl hover:text-primary ${
+              pathname === '/about' ? 'active ' : ''
+            }`}
+          >
+            O nas
+          </Link>
+          <Link
+            href="/questions"
+            className={`flex items-center  text-xl hover:text-primary ${
+              pathname === '/questions' ? 'active ' : ''
+            }`}
+          >
+            Pytania
+          </Link>
+          <Link
+            href="/blogs"
+            className={`flex items-center  text-xl hover:text-primary ${
+              pathname === '/blogs' ? 'active ' : ''
+            }`}
+          >
+            Blogi
+          </Link>
+          <Link
+            href="/pets"
+            className={`flex items-center  text-xl hover:text-primary ${
+              pathname === '/pets' ? 'active ' : ''
+            }`}
+          >
+            Zwierzęta
+          </Link>
+          <Link
+            href="/contact"
+            className={`flex items-center  text-xl hover:text-primary ${
+              pathname === '/contact' ? 'active ' : ''
+            }`}
+          >
+            Kontakt
+          </Link>
         </div>
       </SheetContent>
     </Sheet>

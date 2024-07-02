@@ -21,9 +21,7 @@ const CardBlog = ({ image, title, description, id, userId }: PropsBlog) => {
   return (
     <Card className="px-4 py-2 shadow-lg">
       <Link
-
         href={`/blog?id=${id}&title=${title}&description=${description}&image=${image}&userId=${userId}`}
-
       >
         <CardHeader>
           <CardTitle>
@@ -40,8 +38,11 @@ const CardBlog = ({ image, title, description, id, userId }: PropsBlog) => {
         <CardContent>
           <p>{description?.slice(0, 50) + '...'}</p>
         </CardContent>
-        <CardFooter >
-          <p><span className='text-gray-500'>autor: </span>{userId}</p>
+        <CardFooter>
+          <p>
+            <span className="text-gray-500">autor: </span>
+            {userId}
+          </p>
         </CardFooter>
       </Link>
     </Card>

@@ -4,7 +4,7 @@ import pets from '@/data/pets.json'
 import Link from 'next/link'
 import { auth } from '@/app/api/auth/auth'
 
-const Pet = async({ params }: { params: { id: string } }) => {
+const Pet = async ({ params }: { params: { id: string } }) => {
   const session = await auth()
   const { id } = params
   const pet = pets.find((pet) => pet.id === parseInt(id))
@@ -31,8 +31,9 @@ const Pet = async({ params }: { params: { id: string } }) => {
           <span className="text-gray-500">płeć:</span> {pet.gender}
         </p>
         <p>
-{/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2766834846. */}
-          <span className="text-gray-500">wiek:</span> {pet.age} {pet.age>4 ? 'lat' : 'lata'}
+          {/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2766834846. */}
+          <span className="text-gray-500">wiek:</span> {pet.age}{' '}
+          {pet.age > 4 ? 'lat' : 'lata'}
         </p>
         <p>
           <span className="text-gray-500">gatunek:</span> {pet.breed}
@@ -45,17 +46,21 @@ const Pet = async({ params }: { params: { id: string } }) => {
         <p>
           <span className="text-gray-500">opis:</span> {pet.description}
         </p>
-        {session?(
-        <Link
-          href={`/adoption?id=${pet.id}&name=${pet.name}&image=${pet.image}&gender=${pet.gender}&age=${pet.age}&breed=${pet.breed}&group=${pet.group}&vaccinated=${pet.vaccinated}&description=${pet.description}`}
-          className="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded"
-        >
-          Akceptuję regulamin i adoptuje
-        </Link>
-        ):(
-          <Link href="/register" className="bg-red-500 hover:bg-red-700 text-white text-center font-bold py-2 px-4 rounded">Musisz się zalogować</Link>
+        {session ? (
+          <Link
+            href={`/adoption?id=${pet.id}&name=${pet.name}&image=${pet.image}&gender=${pet.gender}&age=${pet.age}&breed=${pet.breed}&group=${pet.group}&vaccinated=${pet.vaccinated}&description=${pet.description}`}
+            className="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded"
+          >
+            Akceptuję regulamin i adoptuje
+          </Link>
+        ) : (
+          <Link
+            href="/register"
+            className="bg-red-500 hover:bg-red-700 text-white text-center font-bold py-2 px-4 rounded"
+          >
+            Musisz się zalogować
+          </Link>
         )}
-          
       </div>
     </div>
   )

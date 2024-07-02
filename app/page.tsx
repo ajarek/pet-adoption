@@ -27,18 +27,16 @@ export default function Home() {
             Poznaj nasze urocze zwierzaki. Czekają na Ciebie.
           </p>
         </div>
-        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8'>
-        {pets
-        .filter(pet => pet.id === 1 || pet.id === 18 || pet.id === 3)
-        .map((pet) => (
-          <CardPet
-            key={pet.id}
-            {...pet}
-          />
-        ))}
-
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
+          {pets
+            .filter((pet) => pet.id === 1 || pet.id === 18 || pet.id === 3)
+            .map((pet) => (
+              <CardPet
+                key={pet.id}
+                {...pet}
+              />
+            ))}
         </div>
-      
       </div>
     </main>
   )

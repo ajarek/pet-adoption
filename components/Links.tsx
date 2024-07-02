@@ -17,48 +17,55 @@ const Links = () => {
           width={40}
           height={40}
           alt="logo"
-          className='rounded-sm' 
+          className="rounded-sm"
         />
-        <h1 className="font-semibold text-xl text-primary capitalize ">Fajny Zwierzak</h1>
+        <h1 className="font-semibold text-xl text-primary capitalize ">
+          Fajny Zwierzak
+        </h1>
       </Link>
-     
-      <div className='flex items-center gap-8 mr-4 '>
+
+      <div className="flex items-center gap-8 mr-4 ">
         <Link
           href="/about"
           className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/about' ? 'active ' : ''}`}
+            pathname === '/about' ? 'active ' : ''
+          }`}
         >
           O nas
         </Link>
         <Link
           href="/questions"
           className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/questions' ? 'active ' : ''}`}
+            pathname === '/questions' ? 'active ' : ''
+          }`}
         >
           Pytania
         </Link>
         <Link
           href="/blogs"
           className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/blogs' ? 'active ' : ''}`}
+            pathname === '/blogs' ? 'active ' : ''
+          }`}
         >
           Blogi
         </Link>
         <Link
           href="/pets"
           className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/pets' ? 'active ' : ''}`}
+            pathname === '/pets' ? 'active ' : ''
+          }`}
         >
           Zwierzęta
         </Link>
         <Link
           href="/contact"
           className={`flex items-center  text-xl hover:text-primary ${
-            pathname === '/contact' ? 'active ' : ''}`}
+            pathname === '/contact' ? 'active ' : ''
+          }`}
         >
           Kontakt
         </Link>
-        </div>
+      </div>
     </div>
   )
 }

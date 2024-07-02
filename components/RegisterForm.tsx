@@ -79,11 +79,21 @@ const RegisterForm = () => {
           value={img}
           onChange={(e) => setImage(e.target.value)}
         />
-        <Input type="hidden" name="isAdmin" value={`${DEFAULT_IS_ADMIN}`} />
-        <Button className="bg-[#0E78F9] hover:bg-[#0E78F9]/90" type="submit">
+        <Input
+          type="hidden"
+          name="isAdmin"
+          value={`${DEFAULT_IS_ADMIN}`}
+        />
+        <Button
+          className="bg-[#0E78F9] hover:bg-[#0E78F9]/90"
+          type="submit"
+        >
           Rejestracja
         </Button>
-        <Link href="/api/auth/signin" className="text-white">
+        <Link
+          href="/api/auth/signin"
+          className="text-white"
+        >
           Masz już konto? <b className="text-[#0E78F9]">Logowanie</b>
         </Link>
       </form>

@@ -3,8 +3,8 @@ import React from 'react'
 
 const AddBlog = () => {
   return (
-    <div className='flex justify-center items-center min-h-screen'>
-      <BlogForm/>
+    <div className="flex justify-center items-center min-h-screen">
+      <BlogForm />
     </div>
   )
 }

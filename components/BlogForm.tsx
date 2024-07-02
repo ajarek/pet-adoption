@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { Textarea } from '@/components/ui/textarea'
 import { auth } from '@/app/api/auth/auth'
 import { redirect } from 'next/navigation'
-const BlogForm = async() => {
+const BlogForm = async () => {
   const session = await auth()
   if (!session) {
     redirect('/register')
@@ -27,8 +27,12 @@ const BlogForm = async() => {
       <form
         className="w-full  flex flex-col gap-4 p-6   "
         action={addBlog}
-      > 
-      <input type="hidden" name="userId" value={session.user?.email||''} />
+      >
+        <input
+          type="hidden"
+          name="userId"
+          value={session.user?.email || ''}
+        />
         <Input
           type="text"
           placeholder="tytuł"
